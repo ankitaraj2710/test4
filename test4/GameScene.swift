@@ -57,19 +57,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                
                
                // GAME LOGIC: Move player based on touch
-               if (nodeTouched == "upButton") {
+               if (nodeTouched == "up") {
                    // move up
                    self.rabbit.position.y = self.player.position.y + rabbit_Speed
                }
-               else if (nodeTouched == "downButton") {
+               else if (nodeTouched == "down") {
                    // move down
                     self.rabbit.position.y = self.player.position.y - rabbit_Speed
                }
-               else if (nodeTouched == "leftButton") {
+               else if (nodeTouched == "left") {
                    // move left
                     self.rabbit.position.x = self.player.position.x - rabbit_Speed
                }
-               else if (nodeTouched == "rightButton") {
+               else if (nodeTouched == "right") {
                    // move right
                     self.rabbit.position.x = self.player.position.x + rabbit_Speed
                }
@@ -78,9 +78,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
            
     
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     }
 
